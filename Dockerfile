@@ -1,5 +1,5 @@
-FROM ghcr.io/graalvm/native-image-community:25 AS image
-WORKDIR /app
+from ghcr.io/graalvm/native-image-community:25 AS image
+workdir /app
 copy gradle/ gradle/
 copy gradlew build.gradle settings.gradle ./
 copy src/ src/
@@ -7,8 +7,8 @@ copy META-INF/native-image/org.Amin/Contact-API/reachability-metadata.json META-
 run chmod +x ./gradlew
 run ./gradlew nativeCompile --no-daemon
 
-FROM ubuntu:24.04
-WORKDIR /app
+from ubuntu:24.04
+workdir /app
 copy --from=image /app/build/native/nativeCompile/Server /app/Server
-EXPOSE 10203
-ENTRYPOINT["./Server"]
+expose 10203
+entrypoint ["./Server"]
