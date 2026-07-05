@@ -37,7 +37,12 @@ graalvmNative{
         buildArgs(
                 '--initialize-at-run-time=io.netty.channel.kqueue.KQueueEventArray',
                 '--initialize-at-run-time=io.netty.channel.kqueue.Native',
-                '--enable-native-access=ALL-UNNAMED'
+                '--initialize-at-run-time=io.netty.util.internal.PlatformDependent',
+                '--initialize-at-run-time=io.netty.util.internal.CleanerJava24Linker',
+                '-H:+SharedArenaSupport',
+                '--enable-native-access=ALL-UNNAMED',
+                '--gc=G1',
+                '-O3'
         )
     }
 
