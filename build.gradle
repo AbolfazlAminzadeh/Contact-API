@@ -8,6 +8,10 @@ plugins {
 group = 'org.kroj'
 version = '1.0-SNAPSHOT'
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     implementation 'io.netty:netty-all:4.2.15.Final'
     implementation "com.fasterxml.jackson.core:jackson-databind:2.22.0"
@@ -41,7 +45,6 @@ graalvmNative{
                 '--initialize-at-run-time=io.netty.util.internal.CleanerJava24Linker',
                 '-H:+SharedArenaSupport',
                 '--enable-native-access=ALL-UNNAMED',
-                '--gc=G1',
                 '-O3'
         )
     }
