@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b870d6-3aee-4a21-b0a8-8ac56b75565c" name="Changes" comment="LICENCE">
+    <list default="true" id="11b870d6-3aee-4a21-b0a8-8ac56b75565c" name="Changes" comment="Removed: Unimportant Imports">
       <change afterPath="$PROJECT_DIR$/Test.http" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Handlers/TestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Util/Netty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Util/Netty.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,31 +82,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Server.executor&quot;: &quot;Profiler#1&quot;,
-    &quot;Gradle.Build Netty-Example-Contact-Api.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Netty-Example-Contact-Api [:Server.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Netty-Example-Contact-Api [:org.Amin.Contact.Server.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Netty-Example-Contact-Api [metadataCopy nativeCompile].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Netty-Example-Contact-Api [shadowJar].executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.All in Test.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Test | #1.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15429688&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2901734&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.HTTP Request&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Application.Server.executor": "Profiler#1",
+    "Gradle.Build Netty-Example-Contact-Api.executor": "Run",
+    "Gradle.Netty-Example-Contact-Api [:Server.main()].executor": "Run",
+    "Gradle.Netty-Example-Contact-Api [:org.Amin.Contact.Server.main()].executor": "Run",
+    "Gradle.Netty-Example-Contact-Api [metadataCopy nativeCompile].executor": "Run",
+    "Gradle.Netty-Example-Contact-Api [shadowJar].executor": "Run",
+    "HTTP Request.All in Test.executor": "Run",
+    "HTTP Request.Test | #1.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15429688",
+    "project.structure.side.proportion": "0.2901734",
+    "settings.editor.selected.configurable": "preferences.sourceCode.HTTP Request",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradle metadataCopy nativeCompile" />
@@ -226,7 +220,7 @@
       <workItem from="1783190183082" duration="3220000" />
       <workItem from="1783194843019" duration="1049000" />
       <workItem from="1783196512494" duration="14798000" />
-      <workItem from="1783249964926" duration="119000" />
+      <workItem from="1783249964926" duration="308000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -300,7 +294,47 @@
       <option name="project" value="LOCAL" />
       <updated>1783250040404</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=".idea folder exclude">
+      <option name="closed" value="true" />
+      <created>1783250129537</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1783250129537</updated>
+    </task>
+    <task id="LOCAL-00011" summary="IDE changes">
+      <option name="closed" value="true" />
+      <created>1783250141790</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1783250141790</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Package Rename">
+      <option name="closed" value="true" />
+      <created>1783250156176</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1783250156176</updated>
+    </task>
+    <task id="LOCAL-00013" summary="GraalVM+ShadowJar for better output">
+      <option name="closed" value="true" />
+      <created>1783250173002</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1783250173002</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Removed: Unimportant Imports">
+      <option name="closed" value="true" />
+      <created>1783250193571</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1783250193571</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,6 +347,11 @@
     <MESSAGE value="Util For Making EventLoopGroups" />
     <MESSAGE value="Initialized Server + Optimized Settings" />
     <MESSAGE value="LICENCE" />
-    <option name="LAST_COMMIT_MESSAGE" value="LICENCE" />
+    <MESSAGE value=".idea folder exclude" />
+    <MESSAGE value="IDE changes" />
+    <MESSAGE value="Package Rename" />
+    <MESSAGE value="GraalVM+ShadowJar for better output" />
+    <MESSAGE value="Removed: Unimportant Imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed: Unimportant Imports" />
   </component>
 </project>
