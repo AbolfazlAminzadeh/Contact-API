@@ -1,6 +1,15 @@
 {
   "reflection": [
     {
+      "type": "com.fasterxml.jackson.databind.ext.Java7SupportImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
       "type": "io.netty.bootstrap.ServerBootstrap$1"
     },
     {
@@ -272,6 +281,9 @@
       "jniAccessible": true
     },
     {
+      "type": "java.io.Serializable"
+    },
+    {
       "type": "java.lang.Boolean",
       "jniAccessible": true,
       "methods": [
@@ -289,8 +301,19 @@
         {
           "name": "getModule",
           "parameterTypes": []
+        },
+        {
+          "name": "getRecordComponents",
+          "parameterTypes": []
+        },
+        {
+          "name": "isRecord",
+          "parameterTypes": []
         }
       ]
+    },
+    {
+      "type": "java.lang.Iterable"
     },
     {
       "type": "java.lang.Module",
@@ -300,6 +323,9 @@
           "parameterTypes": []
         }
       ]
+    },
+    {
+      "type": "java.lang.Object[]"
     },
     {
       "type": "java.lang.OutOfMemoryError",
@@ -317,6 +343,9 @@
           "parameterTypes": []
         }
       ]
+    },
+    {
+      "type": "java.lang.Record"
     },
     {
       "type": "java.lang.RuntimeException",
@@ -379,6 +408,19 @@
       "methods": [
         {
           "name": "getInputArguments",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.lang.reflect.RecordComponent",
+      "methods": [
+        {
+          "name": "getName",
+          "parameterTypes": []
+        },
+        {
+          "name": "getType",
           "parameterTypes": []
         }
       ]
@@ -475,6 +517,51 @@
       "type": "java.nio.channels.FileChannel"
     },
     {
+      "type": "java.util.Collection"
+    },
+    {
+      "type": "java.util.concurrent.ConcurrentHashMap$CollectionView"
+    },
+    {
+      "type": "java.util.concurrent.ConcurrentHashMap$ValuesView"
+    },
+    {
+      "type": "org.Amin.Contact.Contact.Contact",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "int",
+            "java.lang.String",
+            "java.lang.String",
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "firstName",
+          "parameterTypes": []
+        },
+        {
+          "name": "id",
+          "parameterTypes": []
+        },
+        {
+          "name": "lastName",
+          "parameterTypes": []
+        },
+        {
+          "name": "phone",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.Amin.Contact.Handlers.JsonDecoder"
+    },
+    {
+      "type": "org.Amin.Contact.Handlers.MainHandler"
+    },
+    {
       "type": "org.Amin.Contact.Handlers.TestHandler"
     },
     {
@@ -538,6 +625,18 @@
           "parameterTypes": []
         }
       ]
+    },
+    {
+      "type": "sun.text.resources.cldr.FormatData"
+    },
+    {
+      "type": "sun.text.resources.cldr.FormatData_en"
+    },
+    {
+      "type": "sun.text.resources.cldr.FormatData_en_US"
+    },
+    {
+      "type": "sun.util.resources.cldr.CalendarData"
     }
   ],
   "resources": [
