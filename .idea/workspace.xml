@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b870d6-3aee-4a21-b0a8-8ac56b75565c" name="Changes" comment="Added: Custom Exception for contact and handling/passing errors">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Exceptions/InvalidPhoneNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Handlers/JsonDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Handlers/MainHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Util/Util.java" afterDir="false" />
+    <list default="true" id="11b870d6-3aee-4a21-b0a8-8ac56b75565c" name="Changes" comment="Changed: Removed a semicolon :)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/native-image/&lt;groupId&gt;/&lt;artifactId&gt;/reachability-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/native-image/org.Amin/Contact-API/reachability-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.http" beforeDir="false" afterPath="$PROJECT_DIR$/Test.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Handlers/TestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Handlers/MainHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Handlers/MainHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +129,22 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Server">
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="graalvm-25" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.Amin.Contact.Server" />
+      <module name="Netty-Example-org.Amin.Contact.Contact-Api.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.Amin.Contact.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in Test" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Test.http">
       <method v="2" />
     </configuration>
@@ -171,12 +178,14 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.Server" />
       <item itemvalue="Docker.Dockerfile image" />
       <item itemvalue="HTTP Request.Test | #2" />
       <item itemvalue="HTTP Request.All in Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Server" />
         <item itemvalue="HTTP Request.All in Test" />
         <item itemvalue="HTTP Request.Test | #2" />
         <item itemvalue="Docker.Dockerfile image" />
@@ -202,7 +211,7 @@
       <workItem from="1783194843019" duration="1049000" />
       <workItem from="1783196512494" duration="14798000" />
       <workItem from="1783249964926" duration="1514000" />
-      <workItem from="1783251491609" duration="14641000" />
+      <workItem from="1783251491609" duration="15639000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -380,7 +389,87 @@
       <option name="project" value="LOCAL" />
       <updated>1783270221602</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added: Custom Exception for number validation, useful at future">
+      <option name="closed" value="true" />
+      <created>1783270290288</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1783270290288</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added: JSON Translator for Main Handler">
+      <option name="closed" value="true" />
+      <created>1783270342583</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1783270342583</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Changed: TestHandler to MainHandler, handling POST/PUT GET DELETE">
+      <option name="closed" value="true" />
+      <created>1783270371247</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1783270371247</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Moved: For better folder name">
+      <option name="closed" value="true" />
+      <created>1783270388217</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1783270388217</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Enhance: Better Shutdown, Added Handlers">
+      <option name="closed" value="true" />
+      <created>1783270532617</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1783270532617</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Enhanced: Better API Test">
+      <option name="closed" value="true" />
+      <created>1783270626817</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1783270626817</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Added: Util class for keep static objects">
+      <option name="closed" value="true" />
+      <created>1783270646380</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1783270646380</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Idea Changes">
+      <option name="closed" value="true" />
+      <created>1783270701528</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1783270701528</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added: Container File (Not Tested Yet)">
+      <option name="closed" value="true" />
+      <created>1783270721853</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1783270721853</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Changed: Removed a semicolon :)">
+      <option name="closed" value="true" />
+      <created>1783270733998</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1783270733998</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,11 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Netty to project" />
-    <MESSAGE value="Initialization Server" />
-    <MESSAGE value="First Commit" />
-    <MESSAGE value="Util For Making EventLoopGroups" />
-    <MESSAGE value="Initialized Server + Optimized Settings" />
     <MESSAGE value="LICENCE" />
     <MESSAGE value=".idea folder exclude" />
     <MESSAGE value="IDE changes" />
@@ -418,6 +502,16 @@
     <MESSAGE value="Added Jackson Dep for high JSON codec speed" />
     <MESSAGE value="Added: Contact record for DB + Validation" />
     <MESSAGE value="Added: Custom Exception for contact and handling/passing errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added: Custom Exception for contact and handling/passing errors" />
+    <MESSAGE value="Added: Custom Exception for number validation, useful at future" />
+    <MESSAGE value="Added: JSON Translator for Main Handler" />
+    <MESSAGE value="Changed: TestHandler to MainHandler, handling POST/PUT GET DELETE" />
+    <MESSAGE value="Moved: For better folder name" />
+    <MESSAGE value="Enhance: Better Shutdown, Added Handlers" />
+    <MESSAGE value="Enhanced: Better API Test" />
+    <MESSAGE value="Added: Util class for keep static objects" />
+    <MESSAGE value="Idea Changes" />
+    <MESSAGE value="Added: Container File (Not Tested Yet)" />
+    <MESSAGE value="Changed: Removed a semicolon :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed: Removed a semicolon :)" />
   </component>
 </project>
