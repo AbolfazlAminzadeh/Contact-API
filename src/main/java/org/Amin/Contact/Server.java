@@ -1,9 +1,14 @@
-import Util.Netty;
+package org.Amin.Contact;
+
+import io.netty.handler.codec.http.HttpObjectAggregator;
+import org.Amin.Contact.Handlers.JsonDecoder;
+import org.Amin.Contact.Handlers.MainHandler;
+import org.Amin.Contact.Util.Netty;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.epoll.Epoll;
 import io.netty.channel.epoll.EpollChannelOption;
-import io.netty.channel.uring.IoUringChannelOption;
+import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.codec.http.HttpServerCodec;
 
 public class Server {
@@ -11,13 +16,15 @@ public class Server {
     private final int port;
 
     private final EventLoopGroup bossGroup;
-    public Server(int port, int threads) {
-        bossGroup = Netty.newMultiThreadingEventLoopGroup(threads);
+    private final EventLoopGroup workerGroup;
+
+    public Server(int port, int bossThreads, int workerThreads) {
+        bossGroup = Netty.newMultiThreadingEventLoopGroup(bossThreads);
+        workerGroup = Netty.newMultiThreadingEventLoopGroup(workerThreads);
         this.port = port;
     }
 
     public void start() {
-        EventLoopGroup workerGroup = Netty.newMultiThreadingEventLoopGroup(2);
         try {
             ServerBootstrap bootstrap = new ServerBootstrap();
             bootstrap.group(bossGroup,workerGroup)
@@ -30,12 +37,14 @@ public class Server {
 
                     // SO_RCVBUF or SO_SNDBUF for later
 
-                    .childHandler(new ChannelInitializer<ServerChannel>() {
+                    .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
-                        protected void initChannel(ServerChannel ch) throws Exception {
+                        protected void initChannel(SocketChannel ch) throws Exception {
                             ChannelPipeline pipe = ch.pipeline();
                             pipe.addLast(new HttpServerCodec());
-                            pipe.addLast();
+                            pipe.addLast(new HttpObjectAggregator(1 << 10)); // 1KB
+                            pipe.addLast(new JsonDecoder());
+                            pipe.addLast(new MainHandler(Server.this));
                         }
                     })
             ;
@@ -43,6 +52,7 @@ public class Server {
                 bootstrap
                         .option(EpollChannelOption.SO_REUSEPORT, true)      // Port Share Between Threads
                         .childOption(EpollChannelOption.TCP_QUICKACK,true)  // Delayed ACK Skip
+                    //TODO add more options later, for best latency,throughput
                 ;
 
 
@@ -55,15 +65,26 @@ public class Server {
 
             c.channel().closeFuture().sync();
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            System.out.println("Take a look:"+e);
+            Thread.currentThread().interrupt(); // Dont Break Loop Chain
         } finally {
-            bossGroup.shutdownGracefully();
-            workerGroup.shutdownGracefully();
+            shutdown();
+        }
+    }
+
+    public void shutdown() {
+        System.out.println("System is shutting down; GoodBye :)");
+        try {
+            bossGroup.shutdownGracefully().sync();
+            workerGroup.shutdownGracefully().sync();
+        } catch (InterruptedException e) {
+            System.out.println("Take a look:" + e);
+            Thread.currentThread().interrupt();
         }
     }
 
     public static void main(String[] args) {
-        new Server(10203,8).start();
+        new Server(10203,4,16).start();
     }
 
 }
