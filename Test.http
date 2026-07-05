@@ -1,1 +1,17 @@
-GET http://127.0.0.1:10203/
+GET http://127.0.0.1:10203/contacts
+
+###
+
+POST http://127.0.0.1:10203/contacts
+content-type: application/json
+
+{
+  "id": 13,
+  "firstName": "Abolfazl",
+  "lastName": "Aminzadeh",
+  "phone": "09911876071"
+}
+
+
+###Dont Call That Number, Its not me :)
+DELETE http://127.0.0.1:10203/contacts/11
