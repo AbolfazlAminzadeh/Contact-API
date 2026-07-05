@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b870d6-3aee-4a21-b0a8-8ac56b75565c" name="Changes" comment="Removed: Unimportant Imports">
-      <change afterPath="$PROJECT_DIR$/Test.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Handlers/TestHandler.java" afterDir="false" />
+    <list default="true" id="11b870d6-3aee-4a21-b0a8-8ac56b75565c" name="Changes" comment="Added: Custom Exception for contact and handling/passing errors">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Exceptions/InvalidPhoneNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Handlers/JsonDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Handlers/MainHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Util/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/META-INF/native-image/&lt;groupId&gt;/&lt;artifactId&gt;/reachability-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/native-image/org.Amin/Contact-API/reachability-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.http" beforeDir="false" afterPath="$PROJECT_DIR$/Test.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Handlers/TestHandler.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +53,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTTP Request" />
+        <option value="Exception" />
+        <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -86,6 +96,8 @@
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Application.Server.executor": "Profiler#1",
+    "Docker.Dockerfile image.executor": "Run",
+    "Docker.Dockerfile.executor": "Run",
     "Gradle.Build Netty-Example-Contact-Api.executor": "Run",
     "Gradle.Netty-Example-Contact-Api [:Server.main()].executor": "Run",
     "Gradle.Netty-Example-Contact-Api [:org.Amin.Contact.Server.main()].executor": "Run",
@@ -93,6 +105,11 @@
     "Gradle.Netty-Example-Contact-Api [shadowJar].executor": "Run",
     "HTTP Request.All in Test.executor": "Run",
     "HTTP Request.Test | #1.executor": "Run",
+    "HTTP Request.Test | #2.executor": "Run",
+    "HTTP Request.Test | #3.executor": "Run",
+    "HTTP Request.Test | #4.executor": "Run",
+    "HTTP Request.Test | #5.executor": "Run",
+    "HTTP Request.Test | 1. Get All Contacts.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -114,66 +131,17 @@
     </option>
   </component>
   <component name="RunDashboard">
-    <option name="configurationStatuses">
-      <map>
-        <entry key="HttpClient.HttpRequestRunConfigurationType">
-          <value>
-            <map>
-              <entry key="All in Test" value="STOPPED" />
-              <entry key="Test | #1" value="STOPPED" />
-            </map>
-          </value>
-        </entry>
-      </map>
+    <option name="excludedTypes">
+      <set>
+        <option value="HttpClient.HttpRequestRunConfigurationType" />
+      </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Server">
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="graalvm-25" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="org.Amin.Contact.Server" />
-      <module name="Netty-Example-org.Amin.Contact.Contact-Api.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.Amin.Contact.Handlers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Netty-Example-Contact-Api [metadataCopy nativeCompile]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="run" />
-            <option value="metadataCopy" />
-            <option value="nativeCompile" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <GradleProfilingDisabled>false</GradleProfilingDisabled>
-      <GradleCoverageDisabled>false</GradleCoverageDisabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="All in Test" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Test.http">
       <method v="2" />
     </configuration>
-    <configuration name="Test | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Test.http" executionIdentifier="#1" runType="Run single request">
+    <configuration name="Test | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Test.http" executionIdentifier="#2" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
@@ -187,18 +155,31 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <configuration name="Dockerfile image" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="ghcr.iograalvmnative-image-community25_image" />
+          <option name="buildCliOptions" value="--target image" />
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Application.Server" />
-      <item itemvalue="Gradle.Netty-Example-Contact-Api [metadataCopy nativeCompile]" />
-      <item itemvalue="HTTP Request.Test | #1" />
+      <item itemvalue="Docker.Dockerfile image" />
+      <item itemvalue="HTTP Request.Test | #2" />
       <item itemvalue="HTTP Request.All in Test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.All in Test" />
-        <item itemvalue="HTTP Request.Test | #1" />
-        <item itemvalue="Gradle.Netty-Example-Contact-Api [metadataCopy nativeCompile]" />
-        <item itemvalue="Application.Server" />
+        <item itemvalue="HTTP Request.Test | #2" />
+        <item itemvalue="Docker.Dockerfile image" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +201,8 @@
       <workItem from="1783190183082" duration="3220000" />
       <workItem from="1783194843019" duration="1049000" />
       <workItem from="1783196512494" duration="14798000" />
-      <workItem from="1783249964926" duration="308000" />
+      <workItem from="1783249964926" duration="1514000" />
+      <workItem from="1783251491609" duration="14641000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -334,11 +316,86 @@
       <option name="project" value="LOCAL" />
       <updated>1783250193571</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added: API Test">
+      <option name="closed" value="true" />
+      <created>1783250293627</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1783250293627</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added: A Temp handler for testing api">
+      <option name="closed" value="true" />
+      <created>1783250325001</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1783250325001</updated>
+    </task>
+    <task id="LOCAL-00017" summary=".idea changes">
+      <option name="closed" value="true" />
+      <created>1783250344597</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1783250344597</updated>
+    </task>
+    <task id="LOCAL-00018" summary="GraalVM Agent tracing output">
+      <option name="closed" value="true" />
+      <created>1783250432118</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1783250432118</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixed Idea folder exclusion">
+      <option name="closed" value="true" />
+      <created>1783270129251</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1783270129251</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added Jackson Dep for high JSON codec speed">
+      <option name="closed" value="true" />
+      <created>1783270163854</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1783270163854</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added: Contact record for DB + Validation">
+      <option name="closed" value="true" />
+      <created>1783270187254</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1783270187254</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added: Custom Exception for contact and handling/passing errors">
+      <option name="closed" value="true" />
+      <created>1783270221602</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1783270221602</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Netty to project" />
@@ -352,6 +409,15 @@
     <MESSAGE value="Package Rename" />
     <MESSAGE value="GraalVM+ShadowJar for better output" />
     <MESSAGE value="Removed: Unimportant Imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed: Unimportant Imports" />
+    <MESSAGE value="Added: API Test" />
+    <MESSAGE value="Added: A Temp handler for testing api" />
+    <MESSAGE value=".idea changes" />
+    <MESSAGE value="GRAALVM Agent output for reflections and native codes" />
+    <MESSAGE value="GraalVM Agent tracing output" />
+    <MESSAGE value="Fixed Idea folder exclusion" />
+    <MESSAGE value="Added Jackson Dep for high JSON codec speed" />
+    <MESSAGE value="Added: Contact record for DB + Validation" />
+    <MESSAGE value="Added: Custom Exception for contact and handling/passing errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added: Custom Exception for contact and handling/passing errors" />
   </component>
 </project>
