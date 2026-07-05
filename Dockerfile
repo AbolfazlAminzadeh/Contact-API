@@ -1,4 +1,5 @@
 from ghcr.io/graalvm/native-image-community:25 AS image
+# ENV JAVA_TOOL_OPTIONS="-Djava.net.preferIPv4Stack=true" // Its because ipv6 is closed in my region, you dont need this :)
 workdir /app
 copy gradle/ gradle/
 copy gradlew build.gradle settings.gradle ./
