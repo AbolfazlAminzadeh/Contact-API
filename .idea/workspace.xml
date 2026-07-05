@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b870d6-3aee-4a21-b0a8-8ac56b75565c" name="Changes" comment="Idea Changes">
+    <list default="true" id="11b870d6-3aee-4a21-b0a8-8ac56b75565c" name="Changes" comment="Fix: Just a space">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/native-image/org.Amin/Contact-API/reachability-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/native-image/org.Amin/Contact-API/reachability-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.http" beforeDir="false" afterPath="$PROJECT_DIR$/Test.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +69,9 @@
     &quot;accountId&quot;: &quot;e374d375-8c73-4624-99e5-6a0bce3c44bd&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/README.md" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+  </component>
   <component name="HttpClientOnboardingState">{
   &quot;isOnboardingCommentShown&quot;: true
 }</component>
@@ -86,39 +89,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Application.Server.executor": "Profiler#1",
-    "Docker.Dockerfile image.executor": "Run",
-    "Docker.Dockerfile.executor": "Run",
-    "Gradle.Build Netty-Example-Contact-Api.executor": "Run",
-    "Gradle.Netty-Example-Contact-Api [:Server.main()].executor": "Run",
-    "Gradle.Netty-Example-Contact-Api [:org.Amin.Contact.Server.main()].executor": "Run",
-    "Gradle.Netty-Example-Contact-Api [metadataCopy nativeCompile].executor": "Run",
-    "Gradle.Netty-Example-Contact-Api [shadowJar].executor": "Run",
-    "HTTP Request.All in Test.executor": "Run",
-    "HTTP Request.Test | #1.executor": "Run",
-    "HTTP Request.Test | #2.executor": "Run",
-    "HTTP Request.Test | #3.executor": "Run",
-    "HTTP Request.Test | #4.executor": "Run",
-    "HTTP Request.Test | #5.executor": "Run",
-    "HTTP Request.Test | 1. Get All Contacts.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15429688",
-    "project.structure.side.proportion": "0.2901734",
-    "settings.editor.selected.configurable": "preferences.sourceCode.HTTP Request",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Application.Server.executor&quot;: &quot;Profiler#1&quot;,
+    &quot;Docker.Dockerfile image.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Netty-Example-Contact-Api.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Netty-Example-Contact-Api [:Server.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Netty-Example-Contact-Api [:org.Amin.Contact.Server.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Netty-Example-Contact-Api [metadataCopy nativeCompile].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Netty-Example-Contact-Api [shadowJar].executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.All in Test.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.Test | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.Test | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.Test | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.Test | #4.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.Test | #5.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.Test | 1. Get All Contacts.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15429688&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2901734&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.HTTP Request&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -136,7 +139,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.All in Test">
+  <component name="RunManager" selected="Docker.Dockerfile image">
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="graalvm-25" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -174,14 +177,16 @@
         <settings>
           <option name="imageTag" value="ghcr.iograalvmnative-image-community25_image" />
           <option name="buildCliOptions" value="--target image" />
-          <option name="buildOnly" value="true" />
+          <option name="containerName" value="DD" />
           <option name="sourceFilePath" value="Dockerfile" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <list>
@@ -192,10 +197,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Dockerfile image" />
         <item itemvalue="HTTP Request.All in Test" />
         <item itemvalue="Application.Server" />
         <item itemvalue="HTTP Request.Test | #2" />
-        <item itemvalue="Docker.Dockerfile image" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +223,10 @@
       <workItem from="1783194843019" duration="1049000" />
       <workItem from="1783196512494" duration="14798000" />
       <workItem from="1783249964926" duration="1514000" />
-      <workItem from="1783251491609" duration="17554000" />
+      <workItem from="1783251491609" duration="19091000" />
+      <workItem from="1783275057126" duration="226000" />
+      <workItem from="1783275293213" duration="3465000" />
+      <workItem from="1783279217320" duration="4962000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -492,7 +500,63 @@
       <option name="project" value="LOCAL" />
       <updated>1783271267325</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Fixed: Native Output">
+      <option name="closed" value="true" />
+      <created>1783273188075</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1783273188075</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Enhanced: Added new dependencies">
+      <option name="closed" value="true" />
+      <created>1783273213606</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1783273213606</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Idea Changes">
+      <option name="closed" value="true" />
+      <created>1783273222094</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1783273222094</updated>
+    </task>
+    <task id="LOCAL-00038" summary="LICENCE">
+      <option name="closed" value="true" />
+      <created>1783273235008</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1783273235008</updated>
+    </task>
+    <task id="LOCAL-00039" summary="README">
+      <option name="closed" value="true" />
+      <created>1783273354135</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1783273354135</updated>
+    </task>
+    <task id="LOCAL-00040" summary="README">
+      <option name="closed" value="true" />
+      <created>1783274689226</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1783274689226</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Fix: Just a space">
+      <option name="closed" value="true" />
+      <created>1783276391006</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1783276391007</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,11 +574,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=".idea folder exclude" />
-    <MESSAGE value="IDE changes" />
-    <MESSAGE value="Package Rename" />
-    <MESSAGE value="GraalVM+ShadowJar for better output" />
-    <MESSAGE value="Removed: Unimportant Imports" />
     <MESSAGE value="Added: API Test" />
     <MESSAGE value="Added: A Temp handler for testing api" />
     <MESSAGE value=".idea changes" />
@@ -534,7 +593,12 @@
     <MESSAGE value="Added: Container File (Not Tested Yet)" />
     <MESSAGE value="Changed: Removed a semicolon :)" />
     <MESSAGE value="Fixed: Shutdown operation" />
+    <MESSAGE value="Fixed: Native Output" />
+    <MESSAGE value="Enhanced: Added new dependencies" />
     <MESSAGE value="Idea Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Idea Changes" />
+    <MESSAGE value="LICENCE" />
+    <MESSAGE value="README" />
+    <MESSAGE value="Fix: Just a space" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: Just a space" />
   </component>
 </project>
