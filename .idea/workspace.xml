@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b870d6-3aee-4a21-b0a8-8ac56b75565c" name="Changes" comment="Changed: Removed a semicolon :)">
+    <list default="true" id="11b870d6-3aee-4a21-b0a8-8ac56b75565c" name="Changes" comment="Idea Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Handlers/MainHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Handlers/MainHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Amin/Contact/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/META-INF/native-image/org.Amin/Contact-API/reachability-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/native-image/org.Amin/Contact-API/reachability-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.http" beforeDir="false" afterPath="$PROJECT_DIR$/Test.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +119,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradle metadataCopy nativeCompile" />
@@ -129,7 +136,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Server">
+  <component name="RunManager" selected="HTTP Request.All in Test">
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="graalvm-25" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -185,8 +192,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Server" />
         <item itemvalue="HTTP Request.All in Test" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="HTTP Request.Test | #2" />
         <item itemvalue="Docker.Dockerfile image" />
       </list>
@@ -211,7 +218,7 @@
       <workItem from="1783194843019" duration="1049000" />
       <workItem from="1783196512494" duration="14798000" />
       <workItem from="1783249964926" duration="1514000" />
-      <workItem from="1783251491609" duration="15639000" />
+      <workItem from="1783251491609" duration="17554000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -469,7 +476,23 @@
       <option name="project" value="LOCAL" />
       <updated>1783270733998</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Fixed: Shutdown operation">
+      <option name="closed" value="true" />
+      <created>1783271247408</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1783271247408</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Idea Changes">
+      <option name="closed" value="true" />
+      <created>1783271267325</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1783271267325</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +510,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="LICENCE" />
     <MESSAGE value=".idea folder exclude" />
     <MESSAGE value="IDE changes" />
     <MESSAGE value="Package Rename" />
@@ -509,9 +531,10 @@
     <MESSAGE value="Enhance: Better Shutdown, Added Handlers" />
     <MESSAGE value="Enhanced: Better API Test" />
     <MESSAGE value="Added: Util class for keep static objects" />
-    <MESSAGE value="Idea Changes" />
     <MESSAGE value="Added: Container File (Not Tested Yet)" />
     <MESSAGE value="Changed: Removed a semicolon :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed: Removed a semicolon :)" />
+    <MESSAGE value="Fixed: Shutdown operation" />
+    <MESSAGE value="Idea Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Idea Changes" />
   </component>
 </project>
