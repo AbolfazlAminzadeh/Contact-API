@@ -6,7 +6,6 @@ build/
 .kotlin
 
 ### IntelliJ IDEA ###
-.idea/
 *.iws
 *.iml
 *.ipr
@@ -38,3 +37,4 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/.idea/
