@@ -4,6 +4,22 @@ A high-performance contact management service built directly on Netty, designed 
 
 ---
 
+# 👏 How to run
+### For First, Clone Repository
+```cmd
+git clone https://github.com/AbolfazlAminzadeh/Contact-API.git
+cd Contact-API
+```
+### now build the container and let it finish the work
+```cmd
+docker build -t capi:latest .
+```
+
+### Then you can run container by this command
+```cmd
+docker run -d -p 10203:10203 --name contact-api --ulimit nofile=1048576:1048576 --network host capi:latest
+```
+
 # 📡 API Documentation
 
 ## Base URL
