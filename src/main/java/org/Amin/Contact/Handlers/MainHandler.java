@@ -44,9 +44,11 @@ public class MainHandler extends SimpleChannelInboundHandler<Object> {
 
     private void handleRequest(ChannelHandlerContext ctx, FullHttpRequest request) throws ContactException, JsonProcessingException {
         if (request.uri().startsWith("/shutdown")) {
-            ctx.channel().setOption(ChannelOption.AUTO_READ,false);
-            response(ctx, OK, "{\"status\":\"shutting down\"}", false);
-            server.shutdown();
+            if (server.shuttingDown.compareAndSet(false,true)) {
+                ctx.channel().setOption(ChannelOption.AUTO_READ,false);
+                response(ctx, OK, "{\"status\":\"shutting down\"}", false);
+                server.shutdown();
+            }
         }
         boolean keepAlive = HttpUtil.isKeepAlive(request);
         String uri = request.uri();

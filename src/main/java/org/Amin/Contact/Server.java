@@ -11,12 +11,17 @@ import io.netty.channel.epoll.EpollChannelOption;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.codec.http.HttpServerCodec;
 
+import java.util.concurrent.atomic.AtomicBoolean;
+
 public class Server {
 
     private final int port;
 
     private final EventLoopGroup bossGroup;
     private final EventLoopGroup workerGroup;
+
+    public final AtomicBoolean shuttingDown = new AtomicBoolean(false);
+
 
     public Server(int port, int bossThreads, int workerThreads) {
         bossGroup = Netty.newMultiThreadingEventLoopGroup(bossThreads);
@@ -67,20 +72,13 @@ public class Server {
         } catch (InterruptedException e) {
             System.out.println("Take a look:"+e);
             Thread.currentThread().interrupt(); // Dont Break Loop Chain
-        } finally {
-            shutdown();
         }
     }
 
     public void shutdown() {
         System.out.println("System is shutting down; GoodBye :)");
-        try {
-            bossGroup.shutdownGracefully().sync();
-            workerGroup.shutdownGracefully().sync();
-        } catch (InterruptedException e) {
-            System.out.println("Take a look:" + e);
-            Thread.currentThread().interrupt();
-        }
+        bossGroup.shutdownGracefully();
+        workerGroup.shutdownGracefully();
     }
 
     public static void main(String[] args) {
